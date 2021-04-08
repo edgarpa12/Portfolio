@@ -1,0 +1,171 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin-top: -10vh;
+}
+
+section {
+    min-height: 80vh;
+    padding: 13vh 0;
+}
+
+.bg-gris {
+    background: #f7f7f7;
+}
+
+.bg-degradado {
+    background: linear-gradient(to left, rgb(0, 250, 251), rgb(130, 36, 198));
+}
+
+a.nav-link,
+a.navbar-brand {
+    color: white !important;
+}
+
+.nav-item {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    transition: width 2s;
+}
+
+.nav-item:hover .nav-link {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 992px) {
+    .bg-nav {
+        background-color: black !important;
+        color: white;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #ededed33;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        font-weight: bold;
+    }
+
+    .nav-item:last-child {
+        border: 0px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bg-nav {
+        transition: 500ms ease;
+        background: transparent;
+        color: white;
+    }
+
+    .bg-nav.scrolled {
+        background: white;
+        box-shadow: 0px 20px 50px 0px rgb(0 0 0 / 5%);
+    }
+
+    .bg-nav.scrolled a.nav-link,
+    .bg-nav.scrolled a.navbar-brand {
+        color: black !important;
+    }
+
+    .bg-nav.scrolled .nav-item:hover .nav-link {
+        transform: scale(1.1);
+        background: rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+    }
+}
+
+.btn-pro {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 35px;
+    box-shadow: 0 3px 6px -6px black;
+    margin: 0px 5px;
+    transition: ease-out 0.3s;
+}
+
+.btn-azul {
+    background: linear-gradient(to right, rgb(0, 250, 251), rgb(130, 36, 198));
+    color: white;
+    border: 0px;
+}
+
+.bcg-parallax {
+    min-height: 90vh;
+    max-height: 100vh;
+    padding: 250px 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.bcg {
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    z-index: 2;
+}
+
+.elemento {
+    transition: ease-out 2s;
+    cursor: pointer;
+}
+
+.elemento:hover i {
+    background: linear-gradient(to right, rgb(171, 94, 226), rgb(130, 36, 198));
+    color: white;
+}
+
+.elemento:hover h4 {
+    color: rgb(130, 36, 198);
+}
+
+.elemento i {
+    height: 80px;
+    width: 80px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    background: #f9f9ff;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    color: #222222;
+    margin-bottom: 30px;
+}
+
+#contact a {
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    color: black;
+}
+
+#contact a:hover i {
+    color: rgb(65, 65, 65);
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: black;
+    min-height: 30vh;
+    color: white;
+}
+
+footer span {
+    display: inline-block;
+}

@@ -1,0 +1,483 @@
+<html lang="en">
+  <head>
+    <title>Portfolio Edgar Pineda Aguilar</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap Libraries -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- End of Bootstrap Libraries -->
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8b25142dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End of Fonts and Icons -->
+
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="styles/jquery.animatedheadline.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!-- End of Animation Libraries -->
+
+    <!-- Local Styles and Logic -->
+    <link rel="stylesheet" href="./styles/estilos.css" />
+    <script src="js/main.js"></script>
+    <!-- End of Local Styles and Logic -->
+  </head>
+  <body>
+    <nav class="navbar bg-nav navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home"
+          ><img src="images/logo.svg" width="40" height="40" alt="logo" />
+          <b>Edgar Pineda</b></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main_nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav ml-auto my-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" onclick=""> HOME </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"> ABOUT </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interest"> INTEREST </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"> PORTFOLIO </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> CONTACT </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="bcg-parallax">
+      <div id="particles-js" class="bcg"></div>
+      <div class="content-wrapper animate-clip">
+        <div class="row mt-3">
+          <div class="col-12">
+            <h2>Welcome to my Page</h2>
+            <h1 class="ah-headline">
+              <span class="ah-words-wrapper waiting">
+                <b class="is-visible">Edgar Pineda</b>
+                <b>Developer</b>
+                <b>Designer</b>
+                <b>Student</b>
+              </span>
+            </h1>
+            <button
+              onclick="scrollToElement('contact')"
+              class="btn btn-pro btn-azul my-5"
+            >
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-left mx-4">
+          <h4 class="text-info">About</h4>
+          <h1>Why should we work together?</h1>
+          <br />
+          <p class="text-secondary text-justify">
+            I am a dedicated student who is organized, passionate about learning
+            new things everyday and tries to complete every task to it's best.
+            Currently, I am cursing the last year of Computer Science Bachelor's
+            Degree in Tecnólogico de Costa Rica. I have worked in rich-media
+            banners, database models, web development and more.
+          </p>
+
+          <h3>Skills:</h3>
+          <div class="row">
+            <div class="col-6">
+              <label class="mb-0" for="element1">UX/UI:</label>
+              <div class="progress mb-3">
+                <div
+                  id="element1"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 75%"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  75%
+                </div>
+              </div>
+              <label class="mb-0" for="element2">Web Development:</label>
+              <div class="progress mb-3">
+                <div
+                  id="element2"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 85%"
+                  aria-valuenow="65"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  85%
+                </div>
+              </div>
+              <label class="mb-0" for="element3"
+                >Photoshop / Illustrator:</label
+              >
+              <div class="progress mb-3">
+                <div
+                  id="element3"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 75%"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  75%
+                </div>
+              </div>
+              <label class="mb-0" for="element4">Linux Commands:</label>
+              <div class="progress mb-3">
+                <div
+                  id="element5"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 85%"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  85%
+                </div>
+              </div>
+              <label class="mb-0" for="element5"
+                >C/C++, Python, Dart, Java:</label
+              >
+              <div class="progress mb-3">
+                <div
+                  id="element6"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  90%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="mb-0" for="element6">App Development:</label>
+              <div class="progress mb-3">
+                <div
+                  id="element7"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 60%"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  60%
+                </div>
+              </div>
+              <label class="mb-0" for="element7">SQL Databases:</label>
+              <div class="progress mb-3">
+                <div
+                  id="element8"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  80%
+                </div>
+              </div>
+              <label class="mb-0" for="element8">No SQL Databases:</label>
+              <div class="progress mb-3">
+                <div
+                  id="element9"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 85%"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  85%
+                </div>
+              </div>
+              <label class="mb-0" for="element9">Sketch:</label>
+              <div class="progress mb-3">
+                <div
+                  id="element10"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  70%
+                </div>
+              </div>
+              <label class="mb-0" for="element10">Project Management:</label>
+              <div class="progress mb-3">
+                <div
+                  id="element12"
+                  class="progress-bar bg-degradado"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  80%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img class="img-fluid" src="images/portrait.png" alt="Edgar Pineda" />
+        </div>
+      </div>
+    </section>
+    <section id="interest" class="container-fluid bg-gris">
+      <div class="row align-items-center">
+        <div class="col-lg-5 d-none d-lg-block">
+          <img class="img-fluid mx-4" src="images/hobby.png" alt="Hobby" />
+        </div>
+        <div class="col-lg-6 text-right mx-4">
+          <h4 class="text-info">Personal Interests</h4>
+          <h1>Get to know me a little better</h1>
+          <br />
+          <p>
+            I am a born explorer, I love to go to every corner of my precious
+            country Costa Rica 🇨🇷 and do all kinds of stuff related to explore.
+            Such as trekking, hiking, going to rivers, etc. So I can be more
+            connected to the nature and leave the tech world now and then.
+          </p>
+          <br />
+          <p>
+            I love all kinds of sports in all shapes and forms. I can play or
+            watch sports games everyday, but in 2016 I had a ACL injury so I had
+            to quit soccer and competitive levels of playing sports. But that
+            doesn't stop me from practice other sports such as biking, swimming,
+            running, basketball, etc.
+          </p>
+          <br />
+          <p>
+            Spending time with my family and friends it's a must in my life.
+            Those moments where you can share a laugh and clear your mind are
+            just priceless. All together by the side of God, when I am not
+            programming or learning a new skill, they are whom I spent most of
+            my time.
+          </p>
+          <br />
+          <p>
+            My interest in computer science and software development started
+            when I was just a little kid, as I went to my cousin's house and he
+            had all of this crazy programs on his computer. It always draw my
+            attencion how all of this programs worked and made me invest time in
+            figuring it out.
+          </p>
+          <br />
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-11 text-left mx-4">
+          <h4 class="text-info">Portfolio</h4>
+          <h1>A small selection of my projects</h1>
+          <p class="text-secondary text-justify">
+            To see the source code of this and many other projects you can visit
+            my GitHub page:
+            <a href="https://github.com/edgarpa12"
+              >https://github.com/edgarpa12</a
+            >
+          </p>
+          <br />
+          <div class="row">
+            <div
+              class="elemento col-10 col-lg-4 mx-auto mb-5 my-lg-0 text-center"
+              onclick="goToPage('https://github.com/edgarpa12/Caso-8-Analisis')"
+            >
+              <i class="fas fa-dna fa-3x"></i>
+              <h4>*Genetic Algorithm</h4>
+              <p>
+                Uses a generic algorithm to recreate an image with diferentes
+                shapes, asigning thme the size, position and color.
+              </p>
+            </div>
+            <div class="w-100 d-block d-lg-none"></div>
+            <div
+              class="elemento col-10 col-lg-4 mx-auto mb-5 my-lg-0 text-center"
+              onclick="goToPage('https://mrdapper.club/')"
+            >
+              <i class="fas fa-cut fa-3x"></i>
+              <h4>Mr. Dapper Page</h4>
+              <p>
+                A Barber Shop page used to show it's services and to book
+                appointments.
+              </p>
+            </div>
+            <div class="w-100 d-block d-lg-none"></div>
+            <div
+              class="elemento col-10 col-lg-4 mx-auto mb-5 my-lg-0 text-center"
+              onclick="goToPage('https://github.com/edgarpa12/ProyectoDis_Frontend')"
+            >
+              <i class="fas fa-tasks fa-3x"></i>
+              <h4>*Organization Manager</h4>
+              <p>
+                Using composite, proxy, facade, strategy and Observer design
+                patterns. A system to organize and manage pyramidal structured
+                organizations.
+              </p>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div
+              class="elemento col-10 col-lg-4 mx-auto mb-5 my-lg-0 text-center"
+              onclick="goToPage('https://github.com/emmacf23/web-educatec-frontend')"
+            >
+              <i class="fas fa-code fa-3x"></i>
+              <h4>*Code Example and Evaluation</h4>
+              <p>
+                A platform for teachers and students to upload code and use the
+                examples in order to practice
+              </p>
+            </div>
+            <div class="w-100 d-block d-lg-none"></div>
+            <div
+              class="elemento col-10 col-lg-4 mx-auto mb-5 my-lg-0 text-center"
+              onclick="goToPage('https://arm-cr.com/')"
+            >
+              <i class="fas fa-laptop fa-3x"></i>
+              <h4>Metallurgy Portfolio</h4>
+              <p>A portfolio of services and description of ARM metallurgy.</p>
+            </div>
+            <div class="w-100 d-block d-lg-none"></div>
+            <div
+              class="elemento col-10 col-lg-4 mx-auto mb-5 my-lg-0 text-center"
+              onclick="goToPage('https://github.com/edgarpa12/tuExpress')"
+            >
+              <i class="fas fa-motorcycle fa-3x"></i>
+              <h4>Delivery App</h4>
+              <p>
+                App developed in Flutter making a similar function as Uber Eats,
+                but centralized in Puntarenas.
+              </p>
+            </div>
+          </div>
+          <small class="text-secondary text-justify">
+            *: Projects made for college
+          </small>
+          <br />
+          <small class="text-secondary text-justify">
+            Disclaimer: This portfolio was intentionally made with pure html,
+            css and vanilla js for a web development course.
+          </small>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container-fluid bg-gris">
+      <div class="row align-items-center">
+        <div class="col-lg-11 text-center mx-4">
+          <h4 class="text-info">Contact</h4>
+          <h1>Let's work together!</h1>
+          <p class="text-secondary text-center">
+            Interested in working together? Hit me up and let's start a project
+            together.
+          </p>
+          <br />
+          <small class="text-secondary text-right"> Email me at: </small>
+          <br />
+          <b>edgdav00@gmail.com</b>
+          <br />
+          <br />
+          <small class="text-secondary text-right"> Call me at: </small>
+          <br />
+          <b>+506 85350233</b>
+
+          <br />
+          <br />
+          <small class="text-secondary text-right"> Follow me </small>
+          <br />
+          <p>
+            <a
+              href="https://www.facebook.com/edgar.pinedaaguilar.7/"
+              target="_blank"
+              ><i class="fab fa-facebook-square fa-3x"></i
+            ></a>
+            <a href="https://www.instagram.com/edgarpa12/" target="_blank"
+              ><i class="fab fa-instagram-square fa-3x"></i
+            ></a>
+            <a href="https://twitter.com/edgarpa12" target="_blank"
+              ><i class="fab fa-twitter-square fa-3x"></i
+            ></a>
+            <a href="https://www.github.com/edgarpa12" target="_blank"
+              ><i class="fab fa-github-square fa-3x"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row py-5 align-items-center text-center">
+          <div class="col-12 col-lg-6">
+            <img src="images/logo.svg" width="100" height="100" alt="logo" />
+            <b
+              ><span class="text-left"
+                >Edgar Pineda <br />
+                Computer Science Student</span
+              ></b
+            >
+            <br />
+            <br />
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="ml-auto mt-auto">
+              <small><b>© 2021 Edgar Pineda</b></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Animation JS libraries -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.animatedheadline.min.js"></script>
+    <!-- End of Animation JS libraries -->
+  </body>
+</html>
